@@ -1,0 +1,1 @@
+-wto "9b0eccd467a248149ef6d0b452cf34e6" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "unisims_ver" -L "unimacro_ver" -L "secureip" --snapshot "CORDIC_exp_top_tb_behav" "xil_defaultlib.CORDIC_exp_top_tb" "xil_defaultlib.glbl" -log "elaborate.log" 

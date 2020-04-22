@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../AddSubMul_20_project.srcs/sources_1/imports/20_bit/lampFPU_ASM_pkg.sv" \
+"../../../../AddSubMul_20_project.srcs/sources_1/imports/20_bit/lampFPU_ASM_addsub.sv" \
+"../../../../AddSubMul_20_project.srcs/sources_1/imports/20_bit/lampFPU_ASM_mul.sv" \
+"../../../../AddSubMul_20_project.srcs/sources_1/imports/20_bit/lampFPU_ASM_top.sv" \
+"../../../../AddSubMul_20_project.srcs/sim_1/imports/20_bit/lampFPU_ASM_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

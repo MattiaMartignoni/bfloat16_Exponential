@@ -1,0 +1,11 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+exp(0.050048828125) = 1.051322429225759978082
+IN  : 0.01111010.1001101
+OUT : 0.01111111.0000110
+Number of cc :          56
+exp(-0.010009765625) = 0.9900401653409694480995
+IN  : 1.01111000.0100100
+OUT : 0.01111110.1111101
+Number of cc :          56
+$finish called at time : 1155 ns : File "C:/Coding_Projects/ES_project/TEST_BENCHES/Taylor_16_project/Taylor_16_project.srcs/sim_1/imports/16_bit/TAYLOR_exp_top_tb.sv" Line 110

@@ -1,0 +1,7 @@
+Running: xsim.dir/CORDIC_exp_top_tb_behav/xsimk.exe -simmode gui -wdb CORDIC_exp_top_tb_behav.wdb -simrunnum 0 -socket 50122
+Design successfully loaded
+Design Loading Memory Usage: 5796 KB (Peak: 5796 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 6816 KB (Peak: 6816 KB)
+Simulation CPU Usage: 15 ms

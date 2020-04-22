@@ -1,0 +1,20 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 86ff9ade6b7647babfa4221eb278c219 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot lampFPU_ASM_top_tb_behav xil_defaultlib.lampFPU_ASM_top_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Coding_Projects/ES_project/TEST_BENCHES_20bit/AddSubMul_16_project/AddSubMul_16_project.srcs/sources_1/imports/16_bit/lampFPU_ASM_top.sv" Line 17. Module lampFPU_ASM_top doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Coding_Projects/ES_project/TEST_BENCHES_20bit/AddSubMul_16_project/AddSubMul_16_project.srcs/sources_1/imports/16_bit/lampFPU_ASM_addsub.sv" Line 17. Module lampFPU_ASM_addsub doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Coding_Projects/ES_project/TEST_BENCHES_20bit/AddSubMul_16_project/AddSubMul_16_project.srcs/sources_1/imports/16_bit/lampFPU_ASM_mul.sv" Line 17. Module lampFPU_ASM_mul doesn't have a timescale but at least one module in design has a timescale.
+WARNING: [XSIM 43-4099] "C:/Coding_Projects/ES_project/TEST_BENCHES_20bit/AddSubMul_16_project/AddSubMul_16_project.srcs/sources_1/imports/16_bit/lampFPU_ASM_pkg.sv" Line 17. Module lampFPU_ASM_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lampFPU_ASM_addsub
+Compiling module xil_defaultlib.lampFPU_ASM_mul
+Compiling module xil_defaultlib.lampFPU_ASM_top
+Compiling module xil_defaultlib.lampFPU_ASM_top_tb
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.lampFPU_ASM_pkg
+Built simulation snapshot lampFPU_ASM_top_tb_behav

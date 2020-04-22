@@ -1,0 +1,11 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+exp(0.8984375) = 2.455762982
+IN  : 0.01111110.1100110
+OUT : 0.10000000.0011100
+Number of cc :          86
+exp(-0.062255859375) = 0.93964243970
+IN  : 1.01111010.1111111
+OUT : 0.01111110.1110010
+Number of cc :          86
+$finish called at time : 1755 ns : File "C:/Coding_Projects/ES_project/REPOSITORY/Test_Projects/Cordic_16_project/Cordic_16_project.srcs/sim_1/imports/16_bit/CORDIC_exp_top_tb.sv" Line 110

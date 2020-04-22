@@ -1,0 +1,7 @@
+Running: xsim.dir/lampFPU_ASM_top_tb_behav/xsimk.exe -simmode gui -wdb lampFPU_ASM_top_tb_behav.wdb -simrunnum 0 -socket 52199
+Design successfully loaded
+Design Loading Memory Usage: 5724 KB (Peak: 5724 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 6552 KB (Peak: 6552 KB)
+Simulation CPU Usage: 46 ms

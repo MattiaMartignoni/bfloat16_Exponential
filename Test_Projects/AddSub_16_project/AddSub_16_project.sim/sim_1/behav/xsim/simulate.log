@@ -1,0 +1,13 @@
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+-0.06982421875 + 0.099609375 = +0.02978515625
+IN1 : 1.01111011.0001111
+IN2 : 0.01111011.1001100
+SUM : 0.01111001.1110100
+
+-0.06982421875 - 0.099609375 = -0.16943359375
+IN1 : 1.01111011.0001111
+IN2 : 0.01111011.1001100
+SUB : 1.01111100.0101101
+
+$finish called at time : 135 ns : File "C:/Coding_Projects/ES_project/TEST_BENCHES/AddSub_16_project/AddSub_16_project.srcs/sim_1/imports/16_bit/lampFPU_AS_top_tb.sv" Line 107

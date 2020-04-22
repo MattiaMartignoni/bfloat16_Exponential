@@ -1,0 +1,14 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Taylor_16_project.srcs/sources_1/imports/16_bit/lampFPU_TAY_pkg.sv" \
+"../../../../Taylor_16_project.srcs/sources_1/imports/16_bit/TAYLOR_exp_top.sv" \
+"../../../../Taylor_16_project.srcs/sources_1/imports/16_bit/lampFPU_TAY_addsub.sv" \
+"../../../../Taylor_16_project.srcs/sources_1/imports/16_bit/lampFPU_TAY_mul.sv" \
+"../../../../Taylor_16_project.srcs/sources_1/imports/16_bit/lampFPU_TAY_top.sv" \
+"../../../../Taylor_16_project.srcs/sim_1/imports/16_bit/TAYLOR_exp_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
