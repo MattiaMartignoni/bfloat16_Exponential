@@ -1,0 +1,13 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../CORDIC_TEST.srcs/sources_1/imports/20_bit/lampFPU_COR_pkg.sv" \
+"../../../../CORDIC_TEST.srcs/sources_1/imports/20_bit/CORDIC_exp_top.sv" \
+"../../../../CORDIC_TEST.srcs/sources_1/imports/20_bit/lampFPU_COR_addsub.sv" \
+"../../../../CORDIC_TEST.srcs/sources_1/imports/20_bit/lampFPU_COR_top.sv" \
+"../../../../CORDIC_TEST.srcs/sim_1/new/cordic_error_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

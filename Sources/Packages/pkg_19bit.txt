@@ -14,7 +14,7 @@
 //
 // Date: 30.09.2019
 
-package lampFPU_COR_pkg;
+package lampFPU_XXX_pkg;
 
 	parameter LAMP_FLOAT_DW		=	19;
 	parameter LAMP_FLOAT_S_DW 	=	1;
