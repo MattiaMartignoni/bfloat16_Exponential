@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Mul_16_project.srcs/sources_1/imports/16_bit/lampFPU_M_pkg.sv" \
+"../../../../Mul_16_project.srcs/sources_1/imports/16_bit/lampFPU_M_mul.sv" \
+"../../../../Mul_16_project.srcs/sources_1/imports/16_bit/lampFPU_M_top.sv" \
+"../../../../Mul_16_project.srcs/sim_1/imports/16_bit/lampFPU_M_top_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
