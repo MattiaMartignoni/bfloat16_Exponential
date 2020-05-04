@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module cordic_exp_module_tb();
+module cordic_error_tb();
 
     parameter LAMP_FLOAT_DW_16      = 16;
     parameter LAMP_FLOAT_F_DW_16    = 7;
@@ -24,6 +24,7 @@ module cordic_exp_module_tb();
 
     const shortreal e = 2.71828174591064453125;  //e = 2.71828182845904523536028747135... => 32'b0__1000_0000__0101_1011_1111_0000_1010_100
     const logic [L_SHORTREAL-1:0] zero = 'd0;
+    int countwrong = 0;
 
     logic [LAMP_FLOAT_DW-1:0]   data_temp;
     logic[LAMP_FLOAT_DW-1:0]    data_max;
@@ -31,9 +32,9 @@ module cordic_exp_module_tb();
     int diff_bits_file;
     int data_file;
     int err_perc_file;
-    string diff_bits_file_path  = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/21_bit/diff_bits.csv";
-    string data_file_path       = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/21_bit/data_file.csv";
-    string err_perc_file_path   = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/21_bit/err_perc.csv";
+    string diff_bits_file_path  = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/22_bit_analysis/19_iter/diff_bits.csv";
+    string data_file_path       = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/22_bit_analysis/19_iter/data_file.csv";
+    string err_perc_file_path   = "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Cordic/22_bit_analysis/19_iter/err_perc.csv";
 
     shortreal correct_result;
     shortreal correct_result_rounded_real_16;
@@ -90,15 +91,15 @@ module cordic_exp_module_tb();
 
     function automatic logic[(2*LAMP_FLOAT_DW)-1:0] data_i_init(
         );
-        //we start iterating from 0.03125 up to 1 (for in < 0.05 it is better to use Taylor)
+        //we start iterating from 0.0498046875 up to 1 (for in < 0.05 it is better to use Taylor)
         case(LAMP_FLOAT_DW)
-            16: return {1'b0,8'b0111_1010,7'b0  , 1'b0,8'b0111_1111,7'b0};
-            17: return {1'b0,8'b0111_1010,8'b0  , 1'b0,8'b0111_1111,8'b0};
-            18: return {1'b0,8'b0111_1010,9'b0  , 1'b0,8'b0111_1111,9'b0};
-            19: return {1'b0,8'b0111_1010,10'b0 , 1'b0,8'b0111_1111,10'b0};
-            20: return {1'b0,8'b0111_1010,11'b0 , 1'b0,8'b0111_1111,11'b0};
-            21: return {1'b0,8'b0111_1010,12'b0 , 1'b0,8'b0111_1111,12'b0};
-            22: return {1'b0,8'b0111_1010,13'b0 , 1'b0,8'b0111_1111,13'b0};
+            16: return {1'b0,8'b0111_1010,7'b1001100      , 1'b0,8'b0111_1111,7'b0};
+            17: return {1'b0,8'b0111_1010,7'b1001100,1'b0 , 1'b0,8'b0111_1111,8'b0};
+            18: return {1'b0,8'b0111_1010,7'b1001100,2'b0 , 1'b0,8'b0111_1111,9'b0};
+            19: return {1'b0,8'b0111_1010,7'b1001100,3'b0 , 1'b0,8'b0111_1111,10'b0};
+            20: return {1'b0,8'b0111_1010,7'b1001100,4'b0 , 1'b0,8'b0111_1111,11'b0};//260096 - 251072 + 1 = 9025 iterations
+            21: return {1'b0,8'b0111_1010,7'b1001100,5'b0 , 1'b0,8'b0111_1111,12'b0};
+            22: return {1'b0,8'b0111_1010,7'b1001100,6'b0 , 1'b0,8'b0111_1111,13'b0};
         endcase
     endfunction
 
@@ -256,7 +257,13 @@ module cordic_exp_module_tb();
                     diff_bits_file = $fopen(diff_bits_file_path, "a");
                     if(diff_bits_file)
                     begin
-                        $fdisplay(diff_bits_file, "%d", num_different_bits);
+                        if(num_different_bits > 0)
+                        begin
+                            $fdisplay(diff_bits_file, "diff.bits 16: %d\ndataIN: %b   %f\nN OUT : %b   16OUT : %b\nN REAL: %b   16REAL: %b\nN err : %f               16 err: %f\n", num_different_bits, data_i, $bitstoshortreal({data_i, zero[L_SHORTREAL-LAMP_FLOAT_DW-1:0]}), data_o, data_o_rounded_16, correct_result_rounded, correct_result_rounded_16, err_perc, err_perc_16);
+                            countwrong = countwrong + 1;
+                        end
+                        if(data_temp == data_max+1'b1)
+                            $fdisplay(diff_bits_file, "TOTAL WRONG = %d",countwrong);
                         $fclose(diff_bits_file);
                     end
                     else

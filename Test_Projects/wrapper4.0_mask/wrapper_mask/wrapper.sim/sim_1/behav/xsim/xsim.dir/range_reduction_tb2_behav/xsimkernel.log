@@ -1,0 +1,4 @@
+Running: xsim.dir/range_reduction_tb2_behav/xsimk.exe -simmode gui -wdb range_reduction_tb2_behav.wdb -simrunnum 0 -socket 53354
+Design successfully loaded
+Design Loading Memory Usage: 5644 KB (Peak: 5644 KB)
+Design Loading CPU Usage: 62 ms

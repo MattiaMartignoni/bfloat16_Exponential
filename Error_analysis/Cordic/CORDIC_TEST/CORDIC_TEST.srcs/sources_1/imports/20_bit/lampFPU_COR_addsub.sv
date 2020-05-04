@@ -28,7 +28,7 @@ module lampFPU_COR_addsub (
 	isOverflow_o, isUnderflow_o, isToRound_o
 );
 
-import lampFPU_COR_pkg::*;
+import lampFPU_XXX_pkg::*;
 
 input										clk;
 input										rst;

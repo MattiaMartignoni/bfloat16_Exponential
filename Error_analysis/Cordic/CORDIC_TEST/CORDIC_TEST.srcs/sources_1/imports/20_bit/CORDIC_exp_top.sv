@@ -21,14 +21,17 @@
 
 module CORDIC_exp_top(
     clk, rst,
+    iterations, //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
     padv_i, valid_i, data_i,
     ready_o, data_o, valid_o
     );
 
-    import lampFPU_COR_pkg::*;
+    import lampFPU_XXX_pkg::*;
 
     input  clk;
     input  rst;
+
+    input [4:0] iterations; //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
     input 						padv_i;
     input 						valid_i;
@@ -200,7 +203,7 @@ module CORDIC_exp_top(
                     padv_z_next = 1'b0;
 
 					// after all iterations sum/sub sinh and cosh to have exp result
-                    if (counter == CORDIC_ITERATIONS)
+                    if (counter == iterations)
                     begin
 						// exp(data_i) = cosh(|data_i|) + sign*sinh(|data_i|)
                         op1_z_next = x;
@@ -264,7 +267,7 @@ module CORDIC_exp_top(
                         direction_next = 0;
 
                     //exp at output
-                    if(counter == CORDIC_ITERATIONS)
+                    if(counter == iterations)
                     begin
                         data_o_next = result_z;
                         valid_o_next = 1'b1;
@@ -273,7 +276,7 @@ module CORDIC_exp_top(
                     else
                     begin
                         //sinh and cosh at output
-                        if (counter == (CORDIC_ITERATIONS-1))
+                        if (counter == (iterations-1))
                             padv_z_next = 1'b1;
                         //X,Y,Z for next iteration
                         else

@@ -1,0 +1,7 @@
+Running: xsim.dir/range_reduction_behav/xsimk.exe -simmode gui -wdb range_reduction_behav.wdb -simrunnum 0 -socket 62910
+Design successfully loaded
+Design Loading Memory Usage: 5932 KB (Peak: 5932 KB)
+Design Loading CPU Usage: 77 ms
+Simulation completed
+Simulation Memory Usage: 6868 KB (Peak: 6868 KB)
+Simulation CPU Usage: 218 ms

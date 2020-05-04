@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_COR_pkg.sv" \
+"../../../../wrapper.srcs/sources_1/new/CORDIC_exp_top.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_TAY_pkg.sv" \
+"../../../../wrapper.srcs/sources_1/new/TAYLOR_exp_top.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_ASM_pkg.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_ASM_addsub.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_ASM_mul.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_ASM_top.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_COR_addsub.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_COR_top.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_TAY_addsub.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_TAY_mul.sv" \
+"../../../../wrapper.srcs/sources_1/new/lampFPU_TAY_top.sv" \
+"../../../../wrapper.srcs/sources_1/new/range_reduction.sv" \
+"../../../../wrapper.srcs/sources_1/new/range_reduction_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

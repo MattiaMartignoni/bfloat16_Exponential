@@ -21,7 +21,7 @@ module lampFPU_COR_top (
 	result_o, isResultValid_o, isReady_o
 );
 
-import lampFPU_COR_pkg::*;
+import lampFPU_XXX_pkg::*;
 
 input									clk;
 input									rst;
