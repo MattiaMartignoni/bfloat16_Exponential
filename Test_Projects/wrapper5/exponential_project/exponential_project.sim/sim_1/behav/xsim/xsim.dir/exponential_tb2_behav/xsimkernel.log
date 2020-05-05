@@ -1,0 +1,7 @@
+Running: xsim.dir/exponential_tb2_behav/xsimk.exe -simmode gui -wdb exponential_tb2_behav.wdb -simrunnum 0 -socket 54822
+Design successfully loaded
+Design Loading Memory Usage: 6004 KB (Peak: 6004 KB)
+Design Loading CPU Usage: 46 ms
+Simulation completed
+Simulation Memory Usage: 137724 KB (Peak: 137724 KB)
+Simulation CPU Usage: 22140 ms
