@@ -1,0 +1,113 @@
+TOT DATA PER ITERATION CYCLE = 950
+
+17 bit
+TOT approx 1 =         103		1
+0.596142
+TOT approx 2 =         103
+0.596174
+TOT approx 3 =         103
+0.596174
+TOT approx 4 =         103
+0.596174
+TOT approx 5 =         103
+0.596174
+TOT approx 6 =         103
+0.596174
+TOT approx 7 =         103
+0.596174
+
+18 bit
+TOT approx 1 =         115
+0.601607
+TOT approx 2 =         124		2
+0.587420
+TOT approx 3 =         124
+0.587420
+TOT approx 4 =         124
+0.587420
+TOT approx 5 =         124
+0.587420
+TOT approx 6 =         124
+0.587420
+TOT approx 7 =         124
+0.587420
+
+19 bit
+TOT approx 1 =          57		1
+0.569837
+TOT approx 2 =          57
+0.594668
+TOT approx 3 =          57
+0.594668
+TOT approx 4 =          57
+0.594668
+TOT approx 5 =          57
+0.594668
+TOT approx 6 =          57
+0.594668
+TOT approx 7 =          57
+0.594668
+
+20 bit
+TOT approx 1 =          40
+0.538486
+TOT approx 2 =          29		2
+0.553515
+TOT approx 3 =          29
+0.553515
+TOT approx 4 =          29
+0.553515
+TOT approx 5 =          29
+0.553515
+TOT approx 6 =          29
+0.553515
+TOT approx 7 =          29
+0.553515
+
+21 bit
+TOT approx 1 =          42
+0.529942
+TOT approx 2 =          14		2
+0.585246
+TOT approx 3 =          17
+0.551812
+TOT approx 4 =          17
+0.551812
+TOT approx 5 =          17
+0.551812
+TOT approx 6 =          17
+0.551812
+TOT approx 7 =          17
+0.551812
+
+22 bit
+TOT approx 1 =          42
+0.520009
+TOT approx 2 =           4		2
+0.489174
+TOT approx 3 =           5
+0.468500
+TOT approx 4 =           5
+0.468500
+TOT approx 5 =           5
+0.468500
+TOT approx 6 =           5
+0.468500
+TOT approx 7 =           5
+0.468500
+
+25 bit
+TOT approx 1 =          42
+0.520009
+TOT approx 2 =           4
+0.493343
+TOT approx 3 =           2		3
+0.588253
+TOT approx 4 =           2
+0.588253
+TOT approx 5 =           2
+0.588253
+TOT approx 6 =           2
+0.588253
+TOT approx 7 =           2
+0.588253

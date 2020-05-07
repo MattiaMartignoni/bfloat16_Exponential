@@ -1,0 +1,20 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../exponential_project_scrap.srcs/sources_1/new/exponential_pkg_scrap.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/cordic_top.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/exponential_top.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_COR_addsub.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_COR_top.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_EXP_mul.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_EXP_top.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_TAY_addsub.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_TAY_mul.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/lampFPU_TAY_top.sv" \
+"../../../../exponential_project_scrap.srcs/sources_1/new/taylor_top.sv" \
+"../../../../exponential_project_scrap.srcs/sim_1/new/exponential_tb.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

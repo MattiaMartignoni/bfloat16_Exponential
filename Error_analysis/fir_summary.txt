@@ -1,0 +1,316 @@
+this is a summary of wrong outputs of data from 0.005615234375 to 1 and from -0.00282287597656 to -1 at 16 bit (from minimum in with out != 1)
+thist input data is then divided by log2(e) at n bit and passed to cordic/taylor input
+
+CORDIC
+6cc per iteration in cordic + 8cc pre and after
+
+Number of cc for 10 iterations:          68
+Number of cc for 11 iterations:          74
+Number of cc for 12 iterations:          80
+Number of cc for 13 iterations:          86
+Number of cc for 14 iterations:          92
+Number of cc for 15 iterations:          98
+Number of cc for 16 iterations:         104
+Number of cc for 17 iterations:         110
+Number of cc for 18 iterations:         116
+Number of cc for 19 iterations:         122
+Number of cc for 20 iterations:         128
+
+TAYLOR
+6cc PRE pahse + 16cc per approx level + 2cc pre and after?
+
+Number of cc for approx 1:		8
+Number of cc for approx 2:		24
+Number of cc for approx 3:		40
+Number of cc for approx 4:		56
+Number of cc for approx 5:		72
+Number of cc for approx 6:		88
+Number of cc for approx 7:		104
+
+
+---------- 17bit
+CORDIC
+TOT 10 iterations =        1548
+2.387719
+TOT 11 iterations =        1557
+2.378091
+TOT 12 iterations =        1560
+2.374491
+TOT 13 iterations =        1560
+2.374491
+TOT 14 iterations =        1560
+2.374491
+TOT 15 iterations =        1560
+2.374491
+TOT 16 iterations =        1560
+2.374491
+TOT 17 iterations =        1560
+2.374491
+TOT 18 iterations =        1560
+2.374491
+TOT 19 iterations =        1560
+2.374491
+TOT 20 iterations =        1560
+2.374491
+
+TAYLOR
+TOT approx 1 =         917
+5.555474
+TOT approx 2 =         601
+1.593049
+TOT approx 3 =         397
+0.628110
+TOT approx 4 =         345
+0.575442
+TOT approx 5 =         342
+0.574179
+TOT approx 6 =         342
+0.574179
+TOT approx 7 =         343
+0.573643
+
+---------- 18bit
+CORDIC
+TOT 10 iterations =        1381
+2.410625
+TOT 11 iterations =        1340
+2.466085
+TOT 12 iterations =        1332
+2.317196
+TOT 13 iterations =        1326
+2.326046
+TOT 14 iterations =        1332
+2.317289
+TOT 15 iterations =        1332
+2.317289
+TOT 16 iterations =        1332
+2.317289
+TOT 17 iterations =        1332
+2.317289
+TOT 18 iterations =        1332
+2.317289
+TOT 19 iterations =        1332
+2.317289
+TOT 20 iterations =        1332
+2.317289
+
+TAYLOR
+TOT approx 1 =         931
+5.484515
+TOT approx 2 =         593
+1.596762
+TOT approx 3 =         352
+0.632373
+TOT approx 4 =         259
+0.583060
+TOT approx 5 =         256
+0.579569
+TOT approx 6 =         256
+0.579569
+TOT approx 7 =         256
+0.579569
+
+---------- 19bit
+CORDIC
+TOT 10 iterations =        1209
+2.665582
+TOT 11 iterations =        1185
+2.711759
+TOT 12 iterations =        1169
+2.740842
+TOT 13 iterations =        1178
+2.723666
+TOT 14 iterations =        1154
+2.585160
+TOT 15 iterations =        1155
+2.583847
+TOT 16 iterations =        1155
+2.583275
+TOT 17 iterations =        1155
+2.583275
+TOT 18 iterations =        1155
+2.583275
+TOT 19 iterations =        1155
+2.583275
+TOT 20 iterations =        1155
+2.583275
+
+TAYLOR
+TOT approx 1 =         886
+5.744795
+TOT approx 2 =         489
+1.805907
+TOT approx 3 =         238
+0.655302
+TOT approx 4 =         137
+0.588447
+TOT approx 5 =         122
+0.570969
+TOT approx 6 =         122
+0.570969
+TOT approx 7 =         122
+0.570969
+
+---------- 20bit
+CORDIC
+TOT 10 iterations =        1147
+2.780074
+TOT 11 iterations =        1112
+2.850706
+TOT 12 iterations =        1097
+2.882282
+TOT 13 iterations =        1098
+2.880062
+TOT 14 iterations =        1100
+2.875840
+TOT 15 iterations =        1101
+2.873772
+TOT 16 iterations =        1101
+2.873772
+TOT 17 iterations =        1101
+2.873772
+TOT 18 iterations =        1101
+2.873772
+TOT 19 iterations =        1101
+2.873772
+TOT 20 iterations =        1101
+2.873772
+
+TAYLOR
+TOT approx 1 =         878
+5.806564
+TOT approx 2 =         456
+1.879598
+TOT approx 3 =         196
+0.663700
+TOT approx 4 =          74
+0.583050
+TOT approx 5 =          66
+0.544738
+TOT approx 6 =          66
+0.550656
+TOT approx 7 =          67
+0.548268
+
+---------- 21bit
+CORDIC
+TOT 10 iterations =        1132
+2.810060
+TOT 11 iterations =        1085
+2.908950
+TOT 12 iterations =        1074
+2.932733
+TOT 13 iterations =        1069
+2.943796
+TOT 14 iterations =        1073
+2.935818
+TOT 15 iterations =        1065
+2.953016
+TOT 16 iterations =        1068
+2.946118
+TOT 17 iterations =        1068
+2.946118
+TOT 18 iterations =        1068
+2.946118
+TOT 19 iterations =        1068
+2.946118
+TOT 20 iterations =        1068
+2.946118
+
+TAYLOR
+TOT approx 1 =         885
+5.777695
+TOT approx 2 =         433
+1.957380
+TOT approx 3 =         173
+0.697146
+TOT approx 4 =          45
+0.594635
+TOT approx 5 =          30
+0.533690
+TOT approx 6 =          30
+0.544479
+TOT approx 7 =          31
+0.539516
+
+---------- 22bit
+CORDIC
+TOT 10 iterations =        1131
+2.811491
+TOT 11 iterations =        1085
+2.907678
+TOT 12 iterations =        1073
+2.934815
+TOT 13 iterations =        1063
+2.957848
+TOT 14 iterations =        1060
+2.964534
+TOT 15 iterations =        1057
+2.970968
+TOT 16 iterations =        1057
+2.971192
+TOT 17 iterations =        1055
+2.975538
+TOT 18 iterations =        1056
+2.973407
+TOT 19 iterations =        1056
+2.973407
+TOT 20 iterations =        1056
+2.973407
+
+TAYLOR
+TOT approx 1 =         888
+5.765035
+TOT approx 2 =         421
+1.994424
+TOT approx 3 =         170
+0.694898
+TOT approx 4 =          28
+0.597680
+TOT approx 5 =          16
+0.538052
+TOT approx 6 =          14
+0.508003
+TOT approx 7 =          15
+0.500178
+
+---------- 25bit 
+CORDIC
+TOT 10 iterations =        1130
+2.813693
+TOT 11 iterations =        1078
+2.923365
+TOT 12 iterations =        1055
+2.975600
+TOT 13 iterations =        1043
+3.004074
+TOT 14 iterations =        1036
+3.020188
+TOT 15 iterations =        1030
+3.034402
+TOT 16 iterations =        1030
+3.034383
+TOT 17 iterations =        1029
+3.036801
+TOT 18 iterations =        1028
+3.039374
+TOT 19 iterations =        1028
+3.039374
+TOT 20 iterations =        1028
+3.039374
+
+TAYLOR
+TOT approx 1 =         888
+5.765804
+TOT approx 2 =         420
+1.998484
+TOT approx 3 =         161
+0.705230
+TOT approx 4 =          23
+0.621025
+TOT approx 5 =           6
+0.581830
+TOT approx 6 =           2
+0.588253
+TOT approx 7 =           3
+0.522377

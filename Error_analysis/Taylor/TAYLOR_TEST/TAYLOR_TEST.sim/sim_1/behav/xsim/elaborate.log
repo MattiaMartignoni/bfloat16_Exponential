@@ -1,0 +1,18 @@
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 0ff276776844409596ac5477e8072ace --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot taylor_pro_tb_behav xil_defaultlib.taylor_pro_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+WARNING: [XSIM 43-4099] "C:/Coding_Projects/ES_project/REPOSITORY/Error_analysis/Taylor/TAYLOR_TEST/TAYLOR_TEST.srcs/sources_1/imports/20_bit/lampFPU_TAY_pkg.sv" Line 17. Module lampFPU_XXX_pkg doesn't have a timescale but at least one module in design has a timescale.
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.lampFPU_TAY_addsub
+Compiling module xil_defaultlib.lampFPU_TAY_mul
+Compiling module xil_defaultlib.lampFPU_TAY_top
+Compiling module xil_defaultlib.TAYLOR_exp_top
+Compiling module xil_defaultlib.taylor_pro_tb
+Compiling module xil_defaultlib.glbl
+Compiling package xil_defaultlib.lampFPU_XXX_pkg
+Built simulation snapshot taylor_pro_tb_behav
