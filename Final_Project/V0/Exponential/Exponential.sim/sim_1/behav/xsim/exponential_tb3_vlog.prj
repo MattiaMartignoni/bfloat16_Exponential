@@ -1,0 +1,16 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/exponential_pkg_scrap.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/exponential_top.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/lampFPU_EXP_mul.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/lampFPU_EXP_top.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/lampFPU_TAY_addsub.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/lampFPU_TAY_mul.sv" \
+"../../../../Exponential.srcs/sources_1/imports/Exponential_srcs/lampFPU_TAY_top.sv" \
+"../../../../Exponential.srcs/sim_1/new/exponential_tb3.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
