@@ -1,0 +1,12 @@
+
+{ 
+    crc :  1388039331957611243  , 
+    ccp_crc :  0  , 
+    cmdline : " -wto 5e6ac2a3cbed49bea6786043d1c268d7 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot exponential_tb3_behav xil_defaultlib.exponential_tb3 xil_defaultlib.glbl" , 
+    buildDate : "Jun 14 2018" , 
+    buildTime : "20:41:02" , 
+    linkCmd : "C:\\Xilinx\\Vivado\\2018.2\\data\\..\\tps\\mingw\\6.2.0\\win64.o\\nt\\bin\\gcc.exe -Wa,-W  -O -Wl,--stack,104857600 -o \"xsim.dir/exponential_tb3_behav/xsimk.exe\"   \"xsim.dir/exponential_tb3_behav/obj/xsim_0.win64.obj\" \"xsim.dir/exponential_tb3_behav/obj/xsim_1.win64.obj\" \"C:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simulator_kernel.dll\"  \"C:\\Xilinx\\Vivado\\2018.2\\lib\\win64.o\\\\librdi_simbridge_kernel.dll\"" , 
+    aggregate_nets : 
+    [ 
+    ] 
+} 
