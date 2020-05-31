@@ -1,0 +1,717 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Sat May 30 19:04:19 2020
+# Process ID: 18932
+# Current directory: C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.runs/synth_1
+# Command line: vivado.exe -log exponential_top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source exponential_top.tcl
+# Log file: C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.runs/synth_1/exponential_top.vds
+# Journal file: C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source exponential_top.tcl -notrace
+Command: synth_design -top exponential_top -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 20952 
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 357.184 ; gain = 100.605
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'exponential_top' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:23]
+	Parameter log2e bound to: 1069066811 - type: integer 
+	Parameter inv_log2e bound to: 1060205080 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:293]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:322]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:390]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_pkg_scrap.sv:355]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:514]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:179]
+INFO: [Synth 8-6157] synthesizing module 'lampFPU_EXP_top' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:17]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:220]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:230]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:205]
+INFO: [Synth 8-6157] synthesizing module 'lampFPU_EXP_mul' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv:17]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv:219]
+INFO: [Synth 8-6155] done synthesizing module 'lampFPU_EXP_mul' (1#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv:17]
+WARNING: [Synth 8-6014] Unused sequential element flush_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:160]
+WARNING: [Synth 8-6014] Unused sequential element e_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:273]
+WARNING: [Synth 8-6014] Unused sequential element f_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:274]
+WARNING: [Synth 8-6014] Unused sequential element extF_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:275]
+WARNING: [Synth 8-6014] Unused sequential element e_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:283]
+WARNING: [Synth 8-6014] Unused sequential element f_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:284]
+WARNING: [Synth 8-6014] Unused sequential element extF_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:285]
+INFO: [Synth 8-6155] done synthesizing module 'lampFPU_EXP_top' (2#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'lampFPU_TAY_top' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:4]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:326]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:255]
+INFO: [Synth 8-6157] synthesizing module 'lampFPU_TAY_addsub' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_addsub.sv:17]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_addsub.sv:270]
+INFO: [Synth 8-6155] done synthesizing module 'lampFPU_TAY_addsub' (3#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_addsub.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'lampFPU_TAY_mul' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_mul.sv:17]
+INFO: [Synth 8-294] found qualifier unique on case statement: implementing as parallel_case [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_mul.sv:219]
+INFO: [Synth 8-6155] done synthesizing module 'lampFPU_TAY_mul' (4#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_mul.sv:17]
+WARNING: [Synth 8-6014] Unused sequential element flush_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:186]
+WARNING: [Synth 8-6014] Unused sequential element valid_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:187]
+WARNING: [Synth 8-6014] Unused sequential element e_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:380]
+WARNING: [Synth 8-6014] Unused sequential element f_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:381]
+WARNING: [Synth 8-6014] Unused sequential element e_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:390]
+WARNING: [Synth 8-6014] Unused sequential element f_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:391]
+WARNING: [Synth 8-87] always_comb on 'op1_i_reg' did not result in combinational logic [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:272]
+WARNING: [Synth 8-87] always_comb on 'op2_i_reg' did not result in combinational logic [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:273]
+INFO: [Synth 8-6155] done synthesizing module 'lampFPU_TAY_top' (5#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:4]
+WARNING: [Synth 8-6014] Unused sequential element Ez_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:141]
+WARNING: [Synth 8-6014] Unused sequential element shCount_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:144]
+WARNING: [Synth 8-6014] Unused sequential element data_i_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:146]
+INFO: [Synth 8-4471] merging register 'rst_tay_reg' into 'rst_top_reg' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:120]
+WARNING: [Synth 8-6014] Unused sequential element rst_tay_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:120]
+WARNING: [Synth 8-87] always_comb on 'directPath_reg' did not result in combinational logic [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:224]
+INFO: [Synth 8-6155] done synthesizing module 'exponential_top' (6#1) [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:23]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.668 ; gain = 161.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.668 ; gain = 161.090
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 417.668 ; gain = 161.090
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Synth 8-802] inferred FSM for state register 'ss_reg' in module 'lampFPU_EXP_top'
+INFO: [Synth 8-5544] ROM "doMul_next" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_addsub.sv:197]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:462]
+INFO: [Synth 8-802] inferred FSM for state register 'ss_reg' in module 'lampFPU_TAY_top'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'exponential_top'
+INFO: [Synth 8-5546] ROM "padv_top_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Zi_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "Zf_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_o_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_o_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "data_o_next" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state_next" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    WORK |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ss_reg' using encoding 'one-hot' in module 'lampFPU_EXP_top'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              001 |                               00
+                    ITER |                              010 |                               01
+                    DONE |                              100 |                               10
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'ss_reg' using encoding 'one-hot' in module 'lampFPU_TAY_top'
+WARNING: [Synth 8-327] inferring latch for variable 'op1_i_reg' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:272]
+WARNING: [Synth 8-327] inferring latch for variable 'op2_i_reg' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv:273]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    IDLE |                              000 |                              000
+                     RR1 |                              001 |                              001
+                     RR2 |                              010 |                              010
+                     TAY |                              011 |                              011
+                   RREND |                              100 |                              100
+                    DONE |                              101 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'exponential_top'
+WARNING: [Synth 8-327] inferring latch for variable 'directPath_reg' [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/exponential_top.sv:224]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 445.746 ; gain = 189.168
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     19 Bit       Adders := 2     
+	   2 Input     11 Bit       Adders := 4     
+	   5 Input     10 Bit       Adders := 4     
+	   2 Input     10 Bit       Adders := 6     
+	   3 Input      9 Bit       Adders := 2     
+	   2 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 7     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input     21 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 3     
++---Registers : 
+	               25 Bit    Registers := 11    
+	               21 Bit    Registers := 4     
+	               17 Bit    Registers := 6     
+	               16 Bit    Registers := 1     
+	                9 Bit    Registers := 6     
+	                8 Bit    Registers := 4     
+	                5 Bit    Registers := 5     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 61    
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 6     
+	   2 Input     25 Bit        Muxes := 6     
+	   4 Input     25 Bit        Muxes := 2     
+	   3 Input     25 Bit        Muxes := 3     
+	   6 Input     25 Bit        Muxes := 5     
+	   7 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 13    
+	   3 Input     21 Bit        Muxes := 3     
+	   2 Input     20 Bit        Muxes := 4     
+	   2 Input     16 Bit        Muxes := 9     
+	   9 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   6 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 6     
+	   2 Input      9 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 12    
+	   3 Input      8 Bit        Muxes := 3     
+	   9 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 5     
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 7     
+	   3 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 55    
+	  16 Input      1 Bit        Muxes := 7     
+	  18 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 27    
+	   8 Input      1 Bit        Muxes := 18    
+	  17 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 7     
+	   9 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module exponential_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 3     
+	   2 Input      9 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 4     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 3     
+	   6 Input     25 Bit        Muxes := 5     
+	   9 Input     16 Bit        Muxes := 1     
+	  10 Input     16 Bit        Muxes := 2     
+	   7 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 7     
+	   6 Input     16 Bit        Muxes := 1     
+	   3 Input     15 Bit        Muxes := 1     
+	   2 Input     15 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	   9 Input      8 Bit        Muxes := 1     
+	   6 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 5     
+	   9 Input      3 Bit        Muxes := 1     
+	  16 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   7 Input      2 Bit        Muxes := 1     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 28    
+	   9 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 14    
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	  11 Input      1 Bit        Muxes := 2     
+	   6 Input      1 Bit        Muxes := 16    
+Module lampFPU_EXP_mul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   5 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 3     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	  16 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 1     
+Module lampFPU_EXP_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 1     
+	               17 Bit    Registers := 2     
+	                9 Bit    Registers := 2     
+	                5 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 13    
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 2     
+	   2 Input     21 Bit        Muxes := 1     
+	   3 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   3 Input      1 Bit        Muxes := 9     
+	   8 Input      1 Bit        Muxes := 2     
+Module lampFPU_TAY_addsub 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     21 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input     21 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 2     
+	                9 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                5 Bit    Registers := 1     
+	                1 Bit    Registers := 16    
++---Muxes : 
+	   2 Input     21 Bit        Muxes := 7     
+	   3 Input     21 Bit        Muxes := 1     
+	   2 Input     20 Bit        Muxes := 2     
+	   2 Input      9 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 5     
+	   3 Input      8 Bit        Muxes := 1     
+	  22 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 9     
+	  17 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module lampFPU_TAY_mul 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   5 Input     10 Bit       Adders := 2     
+	   2 Input     10 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               21 Bit    Registers := 1     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 3     
+	   2 Input     21 Bit        Muxes := 2     
+	   2 Input     20 Bit        Muxes := 1     
+	   2 Input     10 Bit        Muxes := 3     
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 6     
+	  16 Input      1 Bit        Muxes := 3     
+	  18 Input      1 Bit        Muxes := 1     
+Module lampFPU_TAY_top 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     19 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               25 Bit    Registers := 5     
+	               17 Bit    Registers := 4     
+	                9 Bit    Registers := 3     
+	                5 Bit    Registers := 2     
+	                3 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 17    
++---Muxes : 
+	   2 Input     25 Bit        Muxes := 1     
+	   4 Input     25 Bit        Muxes := 2     
+	   3 Input     25 Bit        Muxes := 3     
+	   7 Input     23 Bit        Muxes := 1     
+	   2 Input     21 Bit        Muxes := 1     
+	   3 Input     21 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      9 Bit        Muxes := 2     
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	  18 Input      5 Bit        Muxes := 2     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+	   4 Input      1 Bit        Muxes := 6     
+	   8 Input      1 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 16    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-6014] Unused sequential element lampFPU_EXP_mul0/isOverflow_o_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv:111]
+WARNING: [Synth 8-6014] Unused sequential element lampFPU_EXP_mul0/isUnderflow_o_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv:112]
+WARNING: [Synth 8-6014] Unused sequential element extShF_op1_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:292]
+WARNING: [Synth 8-6014] Unused sequential element extShF_op2_r_reg was removed.  [C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.srcs/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv:294]
+DSP Report: Generating DSP lampFPU_EXP_mul0/f_initial_dsp_res_mul1, operation Mode is: A2*B2.
+DSP Report: register extShF_op2_r_reg is absorbed into DSP lampFPU_EXP_mul0/f_initial_dsp_res_mul1.
+DSP Report: register extShF_op1_r_reg is absorbed into DSP lampFPU_EXP_mul0/f_initial_dsp_res_mul1.
+DSP Report: operator lampFPU_EXP_mul0/f_initial_dsp_res_mul1 is absorbed into DSP lampFPU_EXP_mul0/f_initial_dsp_res_mul1.
+DSP Report: Generating DSP f_initial_dsp_res_mul1, operation Mode is: A*B.
+DSP Report: operator f_initial_dsp_res_mul1 is absorbed into DSP f_initial_dsp_res_mul1.
+INFO: [Synth 8-5546] ROM "Zi_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "data_o_next" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "O311" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[24]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[23]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[24]' (FDE) to 'op2_top_reg[0]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[16]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[11]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[20]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[21]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[22]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[23]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[1]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[13]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[2]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[3]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[15]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[5]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[7]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[9]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[8]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_TAY_top_0/\factorial_r_reg[9] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/factorial_r_reg[10]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[14]'
+INFO: [Synth 8-3886] merging instance 'op1_top_reg[0]' (FDE) to 'op2_top_reg[0]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[16]' (FDE) to 'op2_top_reg[4]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[17]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[18]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[19]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[20]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[21]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[22]' (FDE) to 'op2_top_reg[2]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[23]' (FDE) to 'op2_top_reg[0]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[0]' (FDE) to 'op2_top_reg[1]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[1]' (FDE) to 'op2_top_reg[3]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[2]' (FDE) to 'op2_top_reg[6]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[3]' (FDE) to 'op2_top_reg[10]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[4]' (FDE) to 'op2_top_reg[8]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[5]' (FDE) to 'op2_top_reg[7]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[6]' (FDE) to 'op2_top_reg[13]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[7]' (FDE) to 'op2_top_reg[9]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[8]' (FDE) to 'op2_top_reg[12]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[10]' (FDE) to 'op2_top_reg[11]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[11]' (FDE) to 'op2_top_reg[15]'
+INFO: [Synth 8-3886] merging instance 'op2_top_reg[13]' (FDE) to 'op2_top_reg[14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\op2_top_reg[15] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/isOpSub_r_reg' (FDR) to 'lampFPU_TAY_top_0/extE_op1_r_reg[8]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op1_r_reg[8]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_EXP_top_0/\extE_op2_r_reg[8] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/extE_op1_r_reg[8]' (FDR) to 'lampFPU_TAY_top_0/extE_op2_r_reg[8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_TAY_top_0/\extE_op2_r_reg[8] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/lampFPU_TAY_addsub0/isOpSub_r_reg' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_EXP_top_0/rndMode_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_TAY_top_0/rndMode_r_reg)
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/approxLevel_r_reg[0]' (FDRE) to 'lampFPU_TAY_top_0/approxLevel_r_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/approxLevel_r_reg[1]' (FDRE) to 'lampFPU_TAY_top_0/approxLevel_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'opcode_top_reg[0]' (FDRE) to 'opcode_top_reg[1]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op2_r_reg[1]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op2_r_reg[2]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op2_r_reg[3]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[4]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op2_r_reg[4]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/extE_op2_r_reg[5]' (FDR) to 'lampFPU_EXP_top_0/extE_op2_r_reg[6]'
+INFO: [Synth 8-3886] merging instance 'lampFPU_TAY_top_0/lampFPU_TAY_addsub0/e_initial_res_addsub_r_reg[8]' (FDR) to 'lampFPU_TAY_top_0/factorial_r_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lampFPU_TAY_top_0/\factorial_r_reg[9] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/opcode_r_reg[1]' (FDRE) to 'lampFPU_EXP_top_0/opcode_r_reg[0]'
+WARNING: [Synth 8-3332] Sequential element (extE_op2_r_reg[7]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (nlz_op1_r_reg[4]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (nlz_op2_r_reg[4]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_EXP_mul0/f_res_o_reg[0]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (rndMode_r_reg) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (isInf_op2_r_reg) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (s_op2_r_reg[0]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (isSNAN_op2_r_reg) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (isQNAN_op2_r_reg) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (extE_op2_r_reg[8]) is unused and will be removed from module lampFPU_EXP_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_addsub0/f_res_o_reg[0]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_addsub0/isOverflow_o_reg) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_addsub0/isUnderflow_o_reg) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_mul0/f_res_o_reg[0]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_mul0/isOverflow_o_reg) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (lampFPU_TAY_mul0/isUnderflow_o_reg) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (rndMode_r_reg) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[6]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[5]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[4]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[3]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[2]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[1]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (result_o_reg[0]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (extE_op2_r_reg[8]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (factorial_r_reg[9]) is unused and will be removed from module lampFPU_TAY_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[23]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[22]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[21]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[20]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[19]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[18]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[17]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[16]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[15]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[14]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[13]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[12]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[11]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[10]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[9]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[8]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[7]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[6]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[5]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[4]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[3]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[2]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[1]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (Z_reg[0]) is unused and will be removed from module exponential_top.
+WARNING: [Synth 8-3332] Sequential element (op2_top_reg[15]) is unused and will be removed from module exponential_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name     | DSP Mapping | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|lampFPU_EXP_top | A2*B2       | 17     | 17     | -      | -      | 34     | 1    | 1    | -    | -    | -     | 0    | 0    | 
+|lampFPU_TAY_mul | A*B         | 17     | 17     | -      | -      | 34     | 0    | 0    | -    | -    | -     | 0    | 0    | 
++----------------+-------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:17 ; elapsed = 00:00:16 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\lampFPU_EXP_top_0/nlz_op2_r_reg[3] )
+INFO: [Synth 8-3886] merging instance 'lampFPU_EXP_top_0/nlz_op2_r_reg[0]' (FDR) to 'lampFPU_EXP_top_0/nlz_op2_r_reg[2]'
+WARNING: [Synth 8-3332] Sequential element (lampFPU_EXP_top_0/nlz_op2_r_reg[3]) is unused and will be removed from module exponential_top.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:17 ; elapsed = 00:00:17 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |BUFG    |     2|
+|2     |CARRY4  |    55|
+|3     |DSP48E1 |     2|
+|4     |LUT1    |    11|
+|5     |LUT2    |   160|
+|6     |LUT3    |   276|
+|7     |LUT4    |   256|
+|8     |LUT5    |   363|
+|9     |LUT6    |   682|
+|10    |MUXF7   |    24|
+|11    |MUXF8   |     1|
+|12    |FDRE    |   497|
+|13    |FDSE    |     2|
+|14    |LD      |    51|
+|15    |IBUF    |    20|
+|16    |OBUF    |    18|
++------+--------+------+
+
+Report Instance Areas: 
++------+------------------------+-------------------+------+
+|      |Instance                |Module             |Cells |
++------+------------------------+-------------------+------+
+|1     |top                     |                   |  2420|
+|2     |  lampFPU_EXP_top_0     |lampFPU_EXP_top    |   585|
+|3     |    lampFPU_EXP_mul0    |lampFPU_EXP_mul    |   385|
+|4     |  lampFPU_TAY_top_0     |lampFPU_TAY_top    |  1516|
+|5     |    lampFPU_TAY_addsub0 |lampFPU_TAY_addsub |   558|
+|6     |    lampFPU_TAY_mul0    |lampFPU_TAY_mul    |   423|
++------+------------------------+-------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 79 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+Synthesis Optimization Complete : Time (s): cpu = 00:00:18 ; elapsed = 00:00:18 . Memory (MB): peak = 622.641 ; gain = 366.063
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 153 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 51 instances were transformed.
+  LD => LDCE: 51 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+114 Infos, 79 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 667.227 ; gain = 423.664
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Coding_Projects/ES_project/REPOSITORY/Final/FINAL_PROJECT/bfloat16_exponential_test/bfloat16_exponential_test.runs/synth_1/exponential_top.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file exponential_top_utilization_synth.rpt -pb exponential_top_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 667.227 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat May 30 19:04:46 2020...

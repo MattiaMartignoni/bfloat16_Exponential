@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="synth_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1590858257">
+  <File Type="PA-TCL" Name="exponential_top.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="exponential_top_drc_synth.rpt"/>
+  <File Type="REPORTS-TCL" Name="exponential_top_reports.tcl"/>
+  <File Type="RDS-RDS" Name="exponential_top.vds"/>
+  <File Type="RDS-UTIL" Name="exponential_top_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="exponential_top_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="exponential_top.dcp"/>
+  <File Type="VDS-TIMINGSUMMARY" Name="exponential_top_timing_summary_synth.rpt"/>
+  <File Type="VDS-TIMING-PB" Name="exponential_top_timing_summary_synth.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/exponential_pkg_scrap.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/exponential_pkg_scrap.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/lampFPU_EXP_mul.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/lampFPU_EXP_mul.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/lampFPU_EXP_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/lampFPU_EXP_top.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/lampFPU_TAY_addsub.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/lampFPU_TAY_addsub.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/lampFPU_TAY_mul.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/lampFPU_TAY_mul.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/lampFPU_TAY_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/lampFPU_TAY_top.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Exponential4_srcs/exponential_top.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../../V4/Exponential4_srcs/exponential_top.sv"/>
+        <Attr Name="ImportTime" Val="1590852033"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="exponential_top"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2018">
+      <Desc>Vivado Synthesis Defaults</Desc>
+    </StratHandle>
+    <Step Id="synth_design"/>
+  </Strategy>
+</GenRun>
